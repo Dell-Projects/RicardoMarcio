@@ -8,9 +8,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## If appears the error: "An unhandled exception occurred: Could not find module "@angular-devkit/build-angular"
 
-npm i --only=dev
-npm install
-ng serve --open
+`npm i --only=dev`</br> `npm install`</br>`ng serve --open`
+
 
 ## Code scaffolding
 
