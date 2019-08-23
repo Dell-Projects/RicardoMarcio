@@ -2,10 +2,6 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
-## If appears the error: "Could not find module "@angular-devkit/build-angular". Run the commands:
-`npm i --only=dev`
-`npm install`
-`ng serve --open`
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

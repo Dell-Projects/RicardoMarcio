@@ -3,6 +3,10 @@
 body{
     max-width: 500px;
     margin: auto;
-    text-align: justify;
     background-color: lightblue;
+}
+#like:hover{
+    background-color: #FFF;
+    color: #007bff;
+ 
 }
