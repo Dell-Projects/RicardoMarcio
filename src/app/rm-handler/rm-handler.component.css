@@ -1,0 +1,8 @@
+#like:hover{
+    background-color: #FFF;
+    color: #007bff;
+}
+#dislike:hover{
+    background-color: #FFF;
+    color: #dc3545;
+}
