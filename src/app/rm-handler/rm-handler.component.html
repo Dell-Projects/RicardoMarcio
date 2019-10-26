@@ -1,35 +1,36 @@
-<h1>R&M TINDER</h1>
+<h1>R&M TINDER (Teste)</h1>
 <div class="card" style="width: 18rem;">
-        <img src={{character.image}} class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"><b>{{character.name}}</b></h5>
-        </div>
-        <ul class="list-group list-group-flush">
-           <table class="table">
-            <tbody>
-                <tr>
-                  <th scope="col" class="list-group-item">Especie:</th>
-                  <td>{{character.species}}</td>
-                </tr>
-                <tr>
-                  <th scope="col" class="list-group-item">Genero:</th>
-                  <td>{{character.gender}}</td>
-                </tr>
-                <tr>
-                  <th  scope="col">Localização:</th>
-                  <td>{{character.location.name}}</td>
-                </tr>
-              </tbody>
-            </table>
-        </ul>
-        <div class="card-body">
-            <button type="button" id = "like"  [disabled]="booleana"  class="card-link btn btn-primary" (click)="addLike(character.name)">LIKE</button>
-            <button type="button" id = "dislike" class="card-link btn btn-danger"  (click)="getRandChar()">DISLIKE</button>
-        </div>
-      </div>
-      <div *ngIf='favoriteChars.length'>
-            <h3>Matches</h3>
-            <div *ngFor = "let char of favoriteChars; let i = index">
-                <label>{{char}} <button class="card-link btn btn-danger" (click)=delLike(i)>x</button></label>
-            </div>
-        </div>
+  <img src={{character.image}} class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><b>{{character.name}}</b></h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <table class="table">
+      <tbody>
+        <tr>
+          <th scope="col" class="list-group-item">Especie:</th>
+          <td>{{character.species}}</td>
+        </tr>
+        <tr>
+          <th scope="col" class="list-group-item">Genero:</th>
+          <td>{{character.gender}}</td>
+        </tr>
+        <tr>
+          <th scope="col">Localização:</th>
+          <td>{{character.location.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </ul>
+  <div class="card-body">
+    <button type="button" id="like" [disabled]="booleana" class="card-link btn btn-primary"
+      (click)="addLike(character.name)">LIKE</button>
+    <button type="button" id="dislike" class="card-link btn btn-danger" (click)="getRandChar()">DISLIKE</button>
+  </div>
+</div>
+<div *ngIf='favoriteChars.length'>
+  <h3>Matches</h3>
+  <div *ngFor="let char of favoriteChars; let i = index">
+    <label>{{char}} <button class="card-link btn btn-danger" (click)=delLike(i)>x</button></label>
+  </div>
+</div>
